@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+	--max-width: 700px;
+	--beau-blue: #d2e3f9ff;
+	--baby-blue-eyes: #98b7f0ff;
+	--glaucous: #617cc7ff;
+	--ksu-purple: #563488ff;
+	--razzmatazz: #d53467ff;
+}
+/**/
+
+/*NavBar -------------  */
+.navBarContainer {
+	background: var(--ksu-purple);
+	width: 100%;
+}
+
+.NavBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	max-width: var(--max-width);
+	margin: auto;
+	height: 55px; /*definido segun position de searchar pq no la detecta pq usa position fixed*/
+}
+
+.logo {
+	height: 45px;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.espacioBlanco {
+	flex-grow: 2;
+}
+
+.welcome {
+	color: white;
+	align-self: center;
+}
+
+.Title {
+	font-family: 'Lobster', cursive;
+	font-size: 32px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+}
+
+.UserBtn {
+	background: #617cc7;
+	border-radius: 3px;
+	border: 4px solid #617cc7;
+	color: white;
+	margin: 0 5px 0 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.CartBtn {
+	background: #d53467;
+	border-radius: 4px;
+	border: 4px solid #d53467;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Searchbar -------------  */
+
+.SearchBarContainer {
+	width: 100%;
+	background: #d2e3f9;
+	box-shadow: 0 0px 10px 0 rgb(0, 0, 0, 0.4);
+	position: fixed;
+	top: 55px;
+}
+
+.CategoryBtn {
+	background: red;
+	border-radius: 4px;
+	border: none;
+	box-shadow: none;
+	margin-right: 4px;
+}
+
+.CatBtn:hover .lineOpen {
+	background-color: white;
+}
+
+.CatBtn:hover .Cross {
+	background-color: white;
+}
+
+.SearchBar {
+	width: 100vw;
+	max-width: var(--max-width);
+	margin-left: -0vw;
+	margin-bottom: 0px;
+	margin: auto;
+	height: 50px;
+	padding: 0px;
+	padding-top: 4px;
+	display: flex;
+}
+
+.SearchBtn {
+	background: var(--baby-blue-eyes);
+	border-radius: 3px;
+	height: 40px;
+	width: 40px;
+	border: 4px solid var(--baby-blue-eyes);
+	color: white;
+	margin: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.SearchInput {
+	margin: auto;
+  border:none;
+}
+
+.success-modal {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+	top: 9%;
+}
+
+.success-modal .modal-content {
+	width: 70%;
+	left: 15%;
+}
+
+@media (min-width: 500px) {
+	.SearchInput {
+		border:none;
+		width: 70%;
+		margin: auto;
+		align-self: flex-start;
+	}
+}
+
+@media (max-width: 500px) {
+	.SearchBar{
+		width: 98vw;
+		margin-left: 0;
+	}
+	.SearchInput{
+		width: 60%;	
+	}
+	.welcome {
+		display: none;
+	}
+	.NavBar .logo {
+		transform: scale(0.8);
+	}
+}

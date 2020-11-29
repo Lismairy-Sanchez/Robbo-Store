@@ -1,0 +1,91 @@
+:root {
+ --beau-blue: #d2e3f9ff;
+ --baby-blue-eyes: #98b7f0ff;
+ --glaucous: #617cc7ff;
+ --ksu-purple: #563488ff;
+ --razzmatazz: #d53467ff;
+}
+
+.orderFormLine {
+  margin-bottom: -5px;
+  height: 50px;
+  overflow: hidden;
+  border: 3px solid var(--baby-blue-eyes);
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 3px 3px 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 90vw;
+  margin-top: 7px;
+}
+
+.orderFormLine:hover {
+  background-color: var(--beau-blue)
+}
+
+.orderFormLine td{
+  width: 15vw;
+  max-height: 30px;
+  text-align: center;
+  border: 3px solid var(--baby-blue-eyes);
+  border-width: 0px 3px 0px 0px;
+}
+
+.orderFormLine td:nth-last-of-type(1) {
+  border: none;
+}
+
+.orderTitle {
+  background-color: var(--glaucous);
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.orderTitle.productInputTag {
+  width: 18vw;
+  margin: none;
+  padding: none;
+}
+
+.displayOpen {
+  margin-top: -0.3vw;
+  width: 90vw;
+  max-width:800px;
+  border: 3px solid var(--baby-blue-eyes);
+  border-width: 0 3px 3px 3px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+.displayClose {
+  display: none;
+  height: 0px;
+}
+
+.tablaOrders {
+  width: 90vw;
+  max-width: 800px;
+  margin-left: -3px;
+}
+
+.orderContent {
+  width: 90vw;
+  max-width:800px;
+  border-width: 0 3px 3px 3px;
+  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+tr:nth-of-type(even) {
+  background-color: var(--beau-blue)
+}
+
+.orderContent.productInputTag {
+  width: 18vw;
+}

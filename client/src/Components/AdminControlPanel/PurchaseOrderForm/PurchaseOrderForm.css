@@ -1,0 +1,35 @@
+ :root {
+	--max-width: 800px;
+	--beau-blue: #d2e3f9ff;
+	--baby-blue-eyes: #98b7f0ff;
+	--glaucous: #617cc7ff;
+	--ksu-purple: #563488ff;
+	--razzmatazz: #d53467ff;
+}
+
+.productFormAdmin {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.POtitle {
+  color:#563488ff;
+}
+
+.productTableTitle {
+  width: 90vw;
+  max-width: 800px;
+  background-color: var(--ksu-purple);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 14px 0 6px 0;
+  border-radius: 13px;
+}
+
+.productTableTitle h6 {
+  color: white;
+  width: 16,6%;
+}

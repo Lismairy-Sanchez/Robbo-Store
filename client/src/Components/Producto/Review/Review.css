@@ -1,0 +1,97 @@
+:root {
+    background-color: var(--ksu-purple);
+    --max-width: 800px;
+    --beau-blue: #d2e3f9ff;
+    --baby-blue-eyes: #98b7f0ff;
+    --glaucous: #617cc7ff;
+    --ksu-purple: #563488ff;
+    --razzmatazz: #d53467ff
+}
+
+.review {
+    max-width: 800px;
+}
+
+.review > form {
+  text-align: right;
+}
+
+.reviewsHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.reviewTextarea {
+  border-radius: 12px;
+  box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.75);
+  padding: 7px;
+  height: 100px;
+  width: 100%;
+}
+
+.reviewSubmitBtn {
+    transition: 0.2s;
+    background: var(--ksu-purple);
+    border-radius: 4px;
+    border: none;
+    color:white;
+    margin: 0;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewSubmitBtn:hover {
+  box-shadow: 0px 0px 6px 0 rgba(0,0,0,0.5);
+  text-shadow: 0 0 5px white;
+}
+
+.starEmpty{
+color: white;
+}
+.starFull{
+    color:yellow;
+}
+
+  
+input.star{
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 3px;
+  font-size: 1.2em;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content:'\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+
+input.star-5:checked ~ label.star:before {
+  color:#FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #F62;
+}
+
+label.star:hover{
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before{
+  content:'\f006';
+  font-family: FontAwesome;
+}

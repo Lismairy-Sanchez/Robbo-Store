@@ -1,0 +1,123 @@
+:root {
+    background-color: var(--ksu-purple);
+    --max-width: 800px;
+    --beau-blue: #d2e3f9ff;
+    --baby-blue-eyes: #98b7f0ff;
+    --glaucous: #617cc7ff;
+    --ksu-purple: #563488ff;
+    --razzmatazz: #d53467ff
+}
+.comment{
+    background-color:var(--baby-blue-eyes);
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: var(--max-width); 
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.33);
+}
+
+.comment > hr {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.commentHeader {
+  display: grid;
+  grid-template-columns: auto 90px;
+}
+
+.userNameContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+}
+
+.btnCont {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: right;
+  vertical-align: top;
+}
+
+.commentDate {
+  font-size: 0.6em;
+  margin: 0;
+}
+
+.bi-star-fill{
+  color:  #FD4;
+}
+
+.addEdit{
+  width: 80px;
+  height: 30px;
+  background: #563488ff;
+  border-radius: 4px;
+  border: 4px solid #563488ff;
+  color:white;
+  margin:10px 5px 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto{
+ width: 200px;
+ height: 100px;
+ position: relative;
+ display:flex;
+ align-content: center;
+}
+
+.comment-editBtn {
+  background-color: #617CC7;
+  font-size: 0.75em;
+  text-align: center;
+  margin: 0px;
+  margin-right: 7px;
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  justify-content: center;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.comment-deleteBtn {
+  background-color: var(--razzmatazz);
+  font-size: 0.75em;
+  text-align: center;
+  margin: 0px;
+  margin-right: 7px;
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  justify-content: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ==================== Coment edition when Open ================*/
+.commentEditOpen {
+  text-align: right;
+}
+
+.commentTextArea{
+  margin: 0;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 7px;
+  box-shadow: inset 0 0 7px rgba(0,0,0,0.45);
+  padding: 7px;
+}
